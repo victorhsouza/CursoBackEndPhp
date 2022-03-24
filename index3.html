@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            background-color: blue;
+            font: normal 13pt arial;
+        }
+
+        header{
+            text-align: center;
+            color: aliceblue;
+            margin-top: auto;
+        }
+
+        section{
+            width: 500px;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.397);
+        }
+        .input{
+            border-radius: 15px;
+            padding: 3px;
+            width: 100%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgba(128, 128, 128, 0.151);
+            
+        }
+        .label{
+           color:rgb(4, 19, 226);
+           font-family: cambria;
+        }
+        #button{
+            border-radius: 10px;
+            background-color:rgba(7, 40, 228, 0.753);
+            width: 50%;
+            text-align: center;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-left: 25%;
+       
+        }
+        #button:hover{
+            background-color:rgba(7, 40, 228, 0.575);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="nome" class="label">Nome  </label>
+            <input type="text" name="nome" id="nome" class="input">
+        </div>
+        <br>
+        <div>
+            <label for="telefone" class="label">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" class="input">
+            
+        </div>
+        <br>
+        <div>
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email" class="input">
+        </div>
+        <br>
+        <div>
+            <label for="data" class="label">Data de nascimento</label>
+            <input type="date" name="data" id="data" class="label">
+        </div>
+
+        <p class="label">Sexo</p>
+        <input type="radio" name="sexo" id="feminino">
+        <label for="feminino" class="label">Feminino</label>
+
+        <input type="radio" name="sexo" id="masculino">
+        <label for="masculino" class="label">Masculino</label>
+
+        <p class="label">Areas que domina</p>
+
+        <input type="checkbox" name="linguagens" id="php">
+        <label for="php" class="label">PHP</label>
+
+        <input type="checkbox" name="linguagens" id="js">
+        <label for="js " class="label">JavaScript</label>
+
+        <input type="checkbox" name="linguagens" id="csharp">
+        <label for="csharp" class="label">C#</label>
+
+        <input type="checkbox" name="linguagens" id="python">
+        <label for="python" class="label">Python</label>
+        <br><br>
+        <div>
+            <label for="hora" class="label">Horario</label>
+            <select name="hora" id="hora" class="input">
+                <option value="manha">Manha</option>
+                <option value="tarde" >Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </div>
+        <BR></BR>
+        <div><label for="sobrevc" class="label">Fale sobre sua experiencia</label>
+        </div>
+        <div>
+            <textarea name="sobrevc" id="sobrevc" cols="30" rows="5" class="label"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar" id="button">
+        </div>
+    </section>
+
+    <footer>
+        &copy; VitecInformatic
+    </footer>
+</body>
+</html>
