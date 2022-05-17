@@ -1,3 +1,7 @@
+<?php 
+include 'login/validaLogin.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +11,13 @@
     <title>Pagina Inicial</title>
 </head>
 <body>
+    <?php 
+        echo "Usuario: " , $_SESSION['usuario'];
+        echo "Perfil: " , $_SESSION['perfil'];
+
+    ?>
     <a href="view/formCadastrarCliente.php">Cadastrar cliente</a>
     <a href="view/listarAllCliente.php">Listar cliente</a>
+    <a href="controller/logoffController.php">Logout</a>
 </body>
 </html>
